@@ -16,7 +16,7 @@ jobs:
         with:
           channel: stable
       - name: Generate Android project files
-        run: flutter create --platforms=android --project-name smart_wealth_planner_ai .
+        run: flutter create --platforms=android .
       - name: Install dependencies
         run: flutter pub get
       - name: Build APK
