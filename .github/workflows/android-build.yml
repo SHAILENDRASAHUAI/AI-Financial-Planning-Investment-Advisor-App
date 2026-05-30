@@ -15,6 +15,8 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
+      - name: Generate Android project files
+        run: flutter create --platforms=android --project-name smart_wealth_planner_ai .
       - name: Install dependencies
         run: flutter pub get
       - name: Build APK
